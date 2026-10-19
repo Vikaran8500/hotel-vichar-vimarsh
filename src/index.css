@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  body {
+    @apply bg-ivory-100 text-charcoal-800 antialiased;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DDB86C;
+}
+
+/* Hairline borders & luxury effects */
+.hairline-border {
+  border: 1px solid rgba(216, 207, 196, 0.4);
+}
+
+.hairline-gold {
+  border: 1px solid rgba(197, 160, 89, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F3E7CA 0%, #C5A059 50%, #9E7D3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-glow {
+  box-shadow: 0 20px 50px -15px rgba(197, 160, 89, 0.15);
+}
+
+/* Micro-interaction transitions */
+.transition-smooth {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
