@@ -29,7 +29,7 @@ export const FloatingBookingBar: React.FC<FloatingBookingBarProps> = ({ onOpenBo
     `*HOTEL VICHAR VIMARSH - DIRECT ENQUIRY*\n\n` +
     `Hello Reception Desk, I would like to inquire about room availability, current tariff, and check-in details for an upcoming stay. Thank you!`;
 
-  const whatsappDirectUrl = `https://wa.me/919636082789?text=${encodeURIComponent(prefilledText)}`;
+  const whatsappDirectUrl = `https://wa.me/919251112789?text=${encodeURIComponent(prefilledText)}`;
 
   return (
     <aside

@@ -113,13 +113,13 @@ export const Facilities: React.FC = () => {
           <div className="flex items-center gap-2.5">
             <Zap className="w-4 h-4 text-gold flex-shrink-0" />
             <span className="text-[11px] sm:text-xs font-sans tracking-wider uppercase font-medium">
-              Continuous Generator
+              Inverter Backup
             </span>
           </div>
           <div className="flex items-center gap-2.5">
             <Droplet className="w-4 h-4 text-gold flex-shrink-0" />
             <span className="text-[11px] sm:text-xs font-sans tracking-wider uppercase font-medium">
-              Hot Water In All Rooms
+              Pure RO Drinking Water
             </span>
           </div>
           <div className="flex items-center gap-2.5">

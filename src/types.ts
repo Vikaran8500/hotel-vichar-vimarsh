@@ -8,6 +8,7 @@ export interface Room {
   occupancy: string;
   bedType: string;
   image: string;
+  images?: string[];
   badge?: string;
   features: string[];
   inclusions: string[];

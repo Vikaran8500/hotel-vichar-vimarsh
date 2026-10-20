@@ -159,6 +159,15 @@ export const Gallery: React.FC = () => {
                 )}
               </div>
             </div>
+
+            {/* Additional Curated Views (Deluxe & Luxury Suite) */}
+            {filteredImages.length > 12 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {filteredImages.slice(12).map((img) =>
+                  renderCard(img, 'aspect-[16/10]', 'object-center')
+                )}
+              </div>
+            )}
           </div>
         )}
 

@@ -31,7 +31,7 @@ export const Highlights: React.FC<HighlightsProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-7 bg-ivory-50 border border-sandstone/50 p-5 sm:p-7 lg:p-8 flex flex-col justify-between group shadow-warm-sm hover:shadow-warm-md hover:border-gold/50 transition-all duration-300">
             <div className="overflow-hidden aspect-[16/10] mb-5 sm:mb-6 relative">
               <img
-                src="/images/room-premium-double.png"
+                src="/images/Premium Big size Bedroom.png"
                 alt="Hotel Vichar Vimarsh authentic double room"
                 className="w-full h-full object-cover transform group-hover:scale-102 transition-transform duration-500"
               />
@@ -44,10 +44,10 @@ export const Highlights: React.FC<HighlightsProps> = ({ onOpenBooking }) => {
                 HAVEN 01 • PRIVATE ACCOMMODATIONS
               </span>
               <h3 className="font-serif text-xl sm:text-2xl text-charcoal-900 font-normal group-hover:text-gold-800 transition-colors">
-                Restful &amp; Air-Conditioned Rooms
+                Restful &amp; Private Accommodations
               </h3>
               <p className="text-xs sm:text-sm text-charcoal-600 font-light leading-relaxed">
-                From solo voyagers choosing our practical Budget Single Bed Room to couples enjoying our spacious double rooms, each room features an attached private bathroom, air conditioning, and peaceful comfort.
+                From solo voyagers choosing our practical Budget Single Room to couples enjoying our spacious double rooms, each room features an attached private bathroom, inverter backup, and peaceful comfort.
               </p>
             </div>
           </div>

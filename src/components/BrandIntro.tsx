@@ -72,10 +72,10 @@ export const BrandIntro: React.FC = () => {
               <div className="p-4 sm:p-5 bg-ivory-50 border border-sandstone/50 shadow-warm-sm hover:border-gold/60 transition-colors">
                 <Zap className="w-5 h-5 text-gold mb-2" />
                 <span className="block font-serif text-xl sm:text-2xl lg:text-3xl text-charcoal-900 font-medium mb-1">
-                  100%
+                  Inverter
                 </span>
                 <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-charcoal-600 font-medium block">
-                  Power &amp; AC Backup
+                  Power Backup
                 </span>
               </div>
 

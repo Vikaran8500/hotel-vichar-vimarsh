@@ -23,7 +23,7 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onOpenBooking 
     `*HOTEL VICHAR VIMARSH - DIRECT ENQUIRY*\n\n` +
     `Hello Reception Desk, I would like to inquire about room availability, current tariff, and check-in details for an upcoming stay. Thank you!`;
 
-  const whatsappDirectUrl = `https://wa.me/919636082789?text=${encodeURIComponent(prefilledText)}`;
+  const whatsappDirectUrl = `https://wa.me/919251112789?text=${encodeURIComponent(prefilledText)}`;
 
   return (
     <section
@@ -88,7 +88,7 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onOpenBooking 
                       Chat Directly with Front Desk
                     </h3>
                     <p className="text-xs text-emerald-100/90 font-light">
-                      Pre-filled enquiry for live availability &amp; instant quotes: +91 9636082789
+                      Pre-filled enquiry for live availability &amp; instant quotes: +91 9251112789
                     </p>
                   </div>
 
@@ -301,7 +301,7 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onOpenBooking 
                 </div>
                 <div className="flex items-center gap-2">
                   <Zap className="w-4 h-4 text-gold flex-shrink-0" />
-                  <span>Continuous Generator &amp; Power Backup</span>
+                  <span>Inverter Backup</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-gold flex-shrink-0" />

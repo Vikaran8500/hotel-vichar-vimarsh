@@ -60,7 +60,7 @@ export function validateEnquiryInput(payload: EnquiryPayload): { isValid: boolea
 export function buildWhatsAppEnquiryUrl(
   payload: EnquiryPayload,
   referenceCode: string,
-  whatsappNumber: string = '919636082789'
+  whatsappNumber: string = '919251112789'
 ): string {
   const checkIn = new Date(payload.checkInDate).getTime();
   const checkOut = new Date(payload.checkOutDate).getTime();

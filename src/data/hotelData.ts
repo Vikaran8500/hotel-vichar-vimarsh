@@ -9,19 +9,19 @@ export const HOTEL_INFO = {
   address: "Hotel Vichar Vimarsh, Near Arterial Transit Highway, Rajasthan, India",
   googleMapsUrl: "https://maps.google.com/?q=Hotel+Vichar+Vimarsh+Rajasthan",
   phones: [
-    { label: "Front Desk & WhatsApp Reception", number: "+91 9636082789", tel: "+919636082789" },
+    { label: "Front Desk & WhatsApp Reception", number: "+91 9251112789", tel: "+919251112789" },
     { label: "Alternate Helpline", number: "+91 9251112789", tel: "+919251112789" },
   ],
-  whatsapp: "919636082789",
-  whatsappUrl: "https://wa.me/919636082789",
+  whatsapp: "919251112789",
+  whatsappUrl: "https://wa.me/919251112789",
   email: "HOTELVICHARVIMARSH@GMAIL.COM",
   operatingHours: "Open 24 Hours • 7 Days a Week",
   checkInTime: "12:00 PM (Flexible check-in accommodated)",
   checkOutTime: "11:00 AM (Express check-out 24/7)",
   featuresList: [
     "24/7 Front Desk with Physical Staff on Duty",
-    "Air Conditioned & Well-Ventilated Room Categories",
-    "Continuous Generator Power & AC Backup",
+    "Well-Ventilated Room Categories",
+    "Inverter Backup",
     "Hydrotherapy Wellness Bath (Select Suite)",
     "Guarded Gated Premises & On-Site Parking",
     "Purified Multi-Stage RO Drinking Water Alcoves",
@@ -33,21 +33,20 @@ export const HOTEL_INFO = {
 export const ROOMS: Room[] = [
   {
     id: "budget-single-room",
-    name: "Budget Single Bed Room",
+    name: "Budget Single Room",
     category: "Solo Traveler Essential",
-    tagline: "3 ft × 7 ft single bed with attached private bathroom for solo travelers.",
-    description: "A practical accommodation option for solo travellers, featuring a single bed and an attached private bathroom.",
-    size: "3 FT × 7 FT BED",
+    tagline: "Comfortable single-bed room for solo travellers, with an attached private bathroom.",
+    description: "Comfortable single-bed room for solo travellers, with an attached private bathroom.",
+    size: "3 FT × 7 FT",
     occupancy: "1 Adult",
-    bedType: "3 ft × 7 ft Single Bed",
-    image: "/images/room-budget-single.png",
+    bedType: "Single Bed",
+    image: "/images/Budget Single A.C. Room.png",
+    images: ["/images/Budget Single A.C. Room.png"],
     badge: "Solo Practical",
     features: [
-      "Attached Private Bathroom (Ensuite)",
       "3 ft × 7 ft Single Bed",
-      "Air Conditioned / Climate Control",
-      "100% Uninterrupted Power Backup",
-      "24/7 Hot & Cold Water Supply",
+      "Attached Private Bathroom",
+      "Inverter Backup",
       "High-Speed Optical Wi-Fi"
     ],
     inclusions: [
@@ -62,19 +61,21 @@ export const ROOMS: Room[] = [
     id: "small-economy-double",
     name: "Small Economy Double Room",
     category: "Economy Double",
-    tagline: "4.25 ft × 7 ft double bed with nature accent mural and attached private bathroom.",
-    description: "A compact accommodation option for couples or two guests, featuring a 4.25 ft × 7 ft double bed and an attached private bathroom.",
-    size: "4.25 FT × 7 FT BED",
+    tagline: "Compact double room for two guests, with an attached private bathroom.",
+    description: "Compact double room for two guests, with an attached private bathroom.",
+    size: "4.25 FT × 7 FT",
     occupancy: "2 Adults",
-    bedType: "4.25 ft × 7 ft Double Bed",
-    image: "/images/room-economy-double.png",
+    bedType: "Double Bed",
+    image: "/images/Small Economy Double A.C. Room.png",
+    images: [
+      "/images/Small Economy Double A.C. Room.png",
+      "/images/Small Economy Double A.C. Room 2.png"
+    ],
     badge: "Popular Value",
     features: [
-      "Attached Private Bathroom",
       "4.25 ft × 7 ft Double Bed",
-      "Nature Accent Artwork Mural",
-      "Quiet Air Conditioning",
-      "100% Generator Power Backup",
+      "Attached Private Bathroom",
+      "Inverter Backup",
       "High-Speed Optical Wi-Fi"
     ],
     inclusions: [
@@ -86,29 +87,85 @@ export const ROOMS: Room[] = [
     startingRate: "Contact Reception for Direct Tariff"
   },
   {
-    id: "premium-double-jacuzzi",
-    name: "Premium Double Room with Jacuzzi",
-    category: "Signature Luxury",
-    tagline: "Spacious double bedroom with attached private hydrotherapy Jacuzzi bath.",
-    description: "Our most luxurious accommodation option, featuring a spacious double bed, elegant ambient lighting, and an attached private hydrotherapy Jacuzzi bathroom for ultimate relaxation.",
-    size: "DELUXE COMFORT",
+    id: "premium-king-size-room",
+    name: "Premium King Size Bed Room",
+    category: "Premium Comfort",
+    tagline: "Spacious king-size room with ambient lighting and a dedicated private bathroom on the floor above.",
+    description: "Spacious king-size room with ambient lighting and a dedicated private bathroom on the floor above.",
+    size: "7 FT × 7 FT",
     occupancy: "2 Adults",
-    bedType: "Spacious Double Bed",
-    image: "/images/room-premium-double.png",
-    badge: "Jacuzzi Feature",
+    bedType: "King Bed",
+    image: "/images/Premium Big size Bedroom.png",
+    images: ["/images/Premium Big size Bedroom.png"],
+    badge: "Spacious Comfort",
     features: [
-      "Attached Private Jacuzzi Bathroom",
-      "Spacious Double Bed with Plush Headboard",
-      "Ambient Cove Lighting & Fluted Panelling",
-      "Whisper-Quiet Air Conditioning",
-      "100% Continuous Generator Backup",
+      "7 ft × 7 ft King-Size Bed",
+      "Dedicated Private Bathroom (Floor Above)",
+      "Inverter Backup",
       "High-Speed Optical Wi-Fi"
     ],
     inclusions: [
-      "Hydrotherapy Jacuzzi Bath",
+      "Dedicated Private Bathroom (Floor Above)",
       "24/7 Front Desk Dedicated Care",
       "Guarded On-Site Parking",
       "Freshly Laundered Premium Bedding"
+    ],
+    startingRate: "Contact Reception for Direct Tariff"
+  },
+  {
+    id: "deluxe-double-room",
+    name: "Deluxe Double Room",
+    category: "Deluxe Double",
+    tagline: "Double bedroom with scenic nature landscape art mural and attached private bathroom.",
+    description: "A well-appointed double room featuring a scenic waterfall landscape feature wall, comfortable double bed, sliding frosted glass doors, and an attached private bathroom.",
+    size: "DELUXE DOUBLE",
+    occupancy: "2 Adults",
+    bedType: "Double Bed",
+    image: "/images/Deluxe Double A.C. Room.png",
+    images: ["/images/Deluxe Double A.C. Room.png"],
+    badge: "Scenic Art Mural",
+    features: [
+      "Attached Private Bathroom (Ensuite)",
+      "Scenic Waterfall Art Mural Wall",
+      "Comfortable Double Bed",
+      "Inverter Backup",
+      "High-Speed Optical Wi-Fi"
+    ],
+    inclusions: [
+      "24/7 Front Desk Assistance",
+      "Guarded On-Site Parking",
+      "Clean Sanitized Bedding & Linens",
+      "Pure RO Drinking Water Station"
+    ],
+    startingRate: "Contact Reception for Direct Tariff"
+  },
+  {
+    id: "luxury-jacuzzi-room",
+    name: "Luxury Room with Private Jacuzzi",
+    category: "Signature Luxury",
+    tagline: "Luxury bedroom suite with attached private hydrotherapy Jacuzzi bath.",
+    description: "Our most exclusive accommodation featuring an elegant swirling marble accent wall, romantic ambiance, and an attached private hydrotherapy Jacuzzi wellness bath.",
+    size: "SIGNATURE SUITE",
+    occupancy: "2 Adults",
+    bedType: "Plush Double Bed",
+    image: "/images/Luxury A.C. Room with Private Jacuzzi.png",
+    images: [
+      "/images/Luxury A.C. Room with Private Jacuzzi.png",
+      "/images/bathroom-jacuzzi.png"
+    ],
+    badge: "Private Jacuzzi",
+    features: [
+      "Attached Private Hydrotherapy Jacuzzi Bath",
+      "Designer Marble Feature Wall & Cove Lighting",
+      "Plush Bed with Decorative Amenities",
+      "Inverter Backup",
+      "High-Speed Optical Wi-Fi"
+    ],
+    inclusions: [
+      "Hydrotherapy Jacuzzi Wellness Bath",
+      "24/7 Front Desk Dedicated Care",
+      "Guarded On-Site Parking",
+      "Freshly Laundered Luxury Linens"
     ],
     startingRate: "Contact Reception for Direct Tariff"
   }
@@ -144,11 +201,11 @@ export const AMENITIES: Amenity[] = [
   },
   {
     id: "power-backup",
-    title: "100% Uninterrupted Power Backup",
-    subtitle: "Generator continuity for AC & light",
-    description: "Equipped with dedicated generator power backup ensuring air conditioning, lighting, hot water, and Wi-Fi remain uninterrupted throughout your stay.",
+    title: "Inverter Backup",
+    subtitle: "Power backup for essential lighting",
+    description: "Equipped with inverter backup to support essential lighting and fans during power outages.",
     iconName: "Zap",
-    highlightTag: "Uninterrupted AC"
+    highlightTag: "Inverter Backup"
   },
   {
     id: "water-hygiene",
@@ -182,27 +239,27 @@ export const AMENITIES: Amenity[] = [
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     id: "room-1",
-    title: "Budget Single Bed Room",
+    title: "Budget Single Room",
     category: "rooms",
-    src: "/images/room-budget-single.png",
+    src: "/images/Budget Single A.C. Room.png",
     aspectRatio: "wide",
-    caption: "Budget Single Bed Room featuring 3 ft × 7 ft bed and attached private bathroom."
+    caption: "Budget Single Room featuring 3 ft × 7 ft bed and attached private bathroom."
   },
   {
     id: "room-2",
     title: "Small Economy Double Room",
     category: "rooms",
-    src: "/images/room-economy-double.png",
+    src: "/images/Small Economy Double A.C. Room.png",
     aspectRatio: "wide",
-    caption: "Small Economy Double Room with 4.25 ft × 7 ft double bed and nature accent wall."
+    caption: "Small Economy Double Room showing ensuite bathroom, shower, and sink."
   },
   {
     id: "room-3",
-    title: "Premium Double Room with Jacuzzi",
+    title: "Premium King Size Bed Room",
     category: "rooms",
-    src: "/images/room-premium-double.png",
+    src: "/images/Premium Big size Bedroom.png",
     aspectRatio: "wide",
-    caption: "Premium Double Room with spacious bed, gold fluted panelling, and seating."
+    caption: "Premium King Size Bed Room with king bed, mirrored ceiling accents, and warm cove lighting."
   },
   {
     id: "ext-golden",
@@ -230,11 +287,27 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     id: "room-4",
-    title: "Small Economy Double Room - View 2",
+    title: "Small Economy Double Room - Bedroom View",
     category: "rooms",
-    src: "/images/room-economy-angle2.png",
+    src: "/images/Small Economy Double A.C. Room 2.png",
     aspectRatio: "wide",
-    caption: "Small Economy Double Room showcasing marble wall styling and plush bed."
+    caption: "Small Economy Double Room featuring double bed, fluted marble panelling, and door."
+  },
+  {
+    id: "room-5",
+    title: "Deluxe Double Room",
+    category: "rooms",
+    src: "/images/Deluxe Double A.C. Room.png",
+    aspectRatio: "wide",
+    caption: "Deluxe Double Room featuring nature waterfall landscape art mural."
+  },
+  {
+    id: "room-6",
+    title: "Luxury Room with Private Jacuzzi",
+    category: "rooms",
+    src: "/images/Luxury A.C. Room with Private Jacuzzi.png",
+    aspectRatio: "wide",
+    caption: "Luxury Room suite featuring marble feature wall and towel swan decor."
   },
   {
     id: "reception-1",
@@ -291,7 +364,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "t2",
-    quote: "The quiet elegance of the rooms, the continuous power backup, and the safe parking gave our family total peace of mind during our Rajasthan road trip. Exceptional hospitality.",
+    quote: "The quiet elegance of the rooms, the inverter backup, and the safe parking gave our family total peace of mind during our Rajasthan road trip. Exceptional hospitality.",
     author: "Rajeshwar Singh",
     origin: "Jaipur Transit Highway",
     verifiedStay: true,
@@ -301,7 +374,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "t3",
-    quote: "A remarkably smooth transit halt right off the arterial route. The air-conditioned room was impeccably neat, Wi-Fi connectivity was solid for work, and the 24-hour reception assisted promptly with an early 5 AM departure.",
+    quote: "A remarkably smooth transit halt right off the arterial route. The room was impeccably neat, Wi-Fi connectivity was solid for work, and the 24-hour reception assisted promptly with an early 5 AM departure.",
     author: "Amit K. Verma",
     origin: "Delhi NCR",
     verifiedStay: true,

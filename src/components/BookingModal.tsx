@@ -163,7 +163,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     setReferenceId(generatedRef);
 
     // 3. Build WhatsApp URL with full pre-filled inquiry details
-    const receptionWhatsApp = HOTEL_INFO.whatsapp || '919636082789';
+    const receptionWhatsApp = HOTEL_INFO.whatsapp || '919251112789';
     const url = buildWhatsAppEnquiryUrl(
       {
         guestName: formData.name,

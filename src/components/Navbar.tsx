@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X, MapPin, Clock } from 'lucide-react';
+import { Phone, Menu, X, MapPin, Clock, Bed } from 'lucide-react';
 import { HOTEL_INFO } from '../data/hotelData';
 
 interface NavbarProps {
@@ -40,12 +40,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-charcoal-900">
-      {/* Top announcement bar - collapses gracefully on scroll */}
+      {/* Top announcement bar */}
       <div
         id="top-announcement-bar"
-        className={`bg-charcoal-900 text-ivory-300 text-xs py-2 px-4 border-b border-charcoal-800/80 font-sans tracking-wider hidden sm:block transition-all duration-300 overflow-hidden ${
-          isScrolled ? 'max-h-0 opacity-0 py-0 border-none' : 'max-h-12 opacity-100'
-        }`}
+        className="hidden"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
@@ -100,18 +98,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 className="w-full h-full object-contain filter drop-shadow"
               />
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-base sm:text-lg lg:text-xl font-medium tracking-wide text-ivory-50 group-hover:text-gold-200 transition-colors leading-tight whitespace-nowrap">
-                HOTEL VICHAR VIMARSH
-              </span>
-              <span className="text-[9px] sm:text-[10px] tracking-widest text-gold-300 uppercase font-sans font-semibold hidden xs:block whitespace-nowrap">
-                Mindful Hospitality • Rajasthan
-              </span>
-            </div>
+            <span className="font-serif text-[18px] sm:text-2xl lg:text-[24px] xl:text-[26px] font-medium tracking-wide text-ivory-50 group-hover:text-gold-200 transition-colors leading-tight whitespace-nowrap">
+              HOTEL VICHAR VIMARSH
+            </span>
           </a>
 
           {/* Desktop Nav Links - Spacious, evenly distributed layout */}
-          <nav id="desktop-nav-links" className="hidden lg:flex items-center gap-6 xl:gap-9 flex-shrink-0">
+          <nav id="desktop-nav-links" className="hidden lg:flex items-center gap-5 xl:gap-8 flex-shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -124,16 +117,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             ))}
           </nav>
 
-          {/* Action CTAs: Call Reception + Book Your Stay */}
+          {/* Action CTAs: Call Reception + Book Your Stay matching reference */}
           <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
             {/* Direct Call Button */}
             <a
               id="header-call-btn"
               href={`tel:${HOTEL_INFO.phones[0].tel}`}
-              className="hidden md:flex items-center gap-2 px-3.5 py-2 text-xs uppercase tracking-wider text-ivory-200 hover:text-gold transition-colors font-medium whitespace-nowrap border border-charcoal-700/80 hover:border-gold/60"
+              className="hidden md:flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs uppercase tracking-wider text-ivory-100 hover:text-gold transition-colors font-medium whitespace-nowrap border border-gold/40 hover:border-gold rounded-md bg-charcoal-900/50"
             >
-              <Phone className="w-3.5 h-3.5 text-gold" />
-              <span>Call Reception</span>
+              <Phone className="w-3.5 h-3.5 text-gold flex-shrink-0" />
+              <span>CALL RECEPTION</span>
             </a>
 
             {/* Primary Booking CTA */}
@@ -141,10 +134,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               id="header-book-btn"
               type="button"
               onClick={onOpenBooking}
-              className="relative px-4 sm:px-6 py-2.5 bg-gold text-charcoal-900 hover:bg-gold-200 font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300 shadow-warm-sm hover:shadow-warm-md flex items-center gap-2 active:scale-95 whitespace-nowrap cursor-pointer"
+              className="relative px-4 sm:px-5 py-2.5 bg-gold hover:bg-gold-200 text-charcoal-900 font-sans text-xs uppercase tracking-wider font-semibold transition-all duration-300 rounded-md shadow-warm-sm hover:shadow-warm-md flex items-center gap-2 active:scale-95 whitespace-nowrap cursor-pointer"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-charcoal-900 animate-pulse hidden sm:inline-block"></span>
-              <span>Book Your Stay</span>
+              <Bed className="w-4 h-4 text-charcoal-900 flex-shrink-0" />
+              <span>BOOK YOUR STAY</span>
             </button>
 
             {/* Mobile Menu Trigger */}

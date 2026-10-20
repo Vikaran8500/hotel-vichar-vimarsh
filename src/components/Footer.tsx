@@ -21,14 +21,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
   };
 
   const receptionEmail = 'hotelvicharvimarsh@gmail.com';
-  const receptionPhone = '+91 9636082789';
+  const receptionPhone = '+91 9251112789';
   const reservationsPhone = '+91 9251112789';
 
   const footerWhatsappMessage =
     `*HOTEL VICHAR VIMARSH - GENERAL ENQUIRY*\n\n` +
     `Hello Reception Desk, I would like to inquire about room availability, current tariff, and check-in details. Thank you!`;
 
-  const footerWhatsappUrl = `https://wa.me/919636082789?text=${encodeURIComponent(footerWhatsappMessage)}`;
+  const footerWhatsappUrl = `https://wa.me/919251112789?text=${encodeURIComponent(footerWhatsappMessage)}`;
 
   return (
     <footer
@@ -235,7 +235,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                   title="Chat directly with reception on WhatsApp"
                 >
                   <MessageCircle className="w-4 h-4 text-ivory-50 flex-shrink-0" />
-                  <span>Chat on WhatsApp (+91 9636082789)</span>
+                  <span>Chat on WhatsApp (+91 9251112789)</span>
                 </a>
               </div>
 
